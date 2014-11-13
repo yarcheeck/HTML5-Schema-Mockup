@@ -1,0 +1,89 @@
+<!--
+		
+	HTML5 + Schema mockup for PAGE ARTICLE
+	
+	Validated using Google Webmasters Tools
+	http://www.google.com/webmasters/tools/richsnippets
+
+-->
+
+<!-- An article, such as a news, blog, etc. 
+	 Article type can be more specified to BlogPosting, ewsArticle, ScholarlyArticle or TechArticle -->
+
+<article itemscope="" itemtype="http://schema.org/Article">
+	
+	<!-- Using meta to describe properties not included in visual markup -->
+	
+	<meta itemprop="datePublished" content="2011-04-01" />
+	<meta itemprop="url" content="www.google.com" />
+	<meta itemprop="interactionCount" content="UserTweets:1203" />
+	<meta itemprop="interactionCount" content="UserComments:78" />
+
+	<!-- Image illustrating the service -->
+	
+	<figure itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+	   <img src="" itemprop="contentURL" alt="" />
+	   <figcaption itemprop="description">Image Description</figcaption>
+	</figure>
+	
+	<!-- Article's title, author, category, and publish data.
+		 Because publish date has different format we use meta do define value. -->
+
+	<header>
+		<h1 itemprop="headline name">Title of the article</h1>
+		<div itemprop="author">John Doe</div>
+		<div itemprop="articleSection">Category Sport</div>		
+		<div>10th June, 2015</div>		
+	</header>
+	
+	<!-- Main article text. -->
+	
+	<section itemprop="articleBody">
+		<p>Body copy of the article.</p>
+	</section>
+	
+	<!-- Comments and social share buttons. -->
+	
+	<footer>
+
+		<!-- Share buttons, where iframe represents 3rd party addon -->
+		<ul>
+			<li>
+				<div itemscope="" itemtype="http://schema.org/FollowAction">    
+					<meta itemprop="name" content="Share" />
+					<iframe src=""></iframe>
+				</div>		
+			</li>
+		</ul>
+		
+		<!-- Comments... -->
+		
+		<ul>
+			<li itemprop="comment" itemscope="" itemtype="http://schema.org/UserComments">
+
+				<blockquote>
+					
+					<figure itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+					   <img src="" itemprop="contentURL" alt="" />
+					   <figcaption itemprop="description">Image Description</figcaption>
+					</figure>
+					
+					<div itemprop="creator" itemscope="" itemtype="http://schema.org/Person">
+						<cite itemprop="name"><a href="" itemprop="url">Paul Smith</a></cite>
+					</div>
+					
+					<div itemprop="commentText">
+						<p>This is text of the comment.</p>
+					</div>
+					
+					<a href="" itemprop="replyToUrl">Reply</a>
+					
+					<meta itemprop="commentTime" content="2011-04-01">
+					
+				</blockquote>	
+
+			</li>
+		</ul>
+	</footer>
+	
+</article>
