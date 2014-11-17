@@ -1,0 +1,119 @@
+<body itemscope="" itemtype="http://schema.org/AboutPage">
+	
+	<header itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact US</a></li>
+			</ul>
+		</nav> 
+	</header>
+	
+	<main>
+	
+		<h1 itemprop="name">About our company</h1>
+		
+		<!-- Main description - history, values, philosophy, etc.. -->
+		
+		<section itemprop="mainContentOfPage">
+			
+			<p>Our company has been established at 2000. Bla bla bla.</p>
+
+			<h2>Our History</h2>
+			<p>Bla bla bla</p>
+			
+			<h2>Our Philosofy</h2>
+			<p>We always follow the latest trends.</p>
+			
+			<h2>Our Values</h2>
+			<ul>
+				<li>To be honest</li>
+			</ul>
+			
+		</section>
+
+		<!-- List of clients -->
+		
+		<section itemprop="audience" itemscope="" itemtype="http://schema.org/Audience">
+			
+			<ul>
+				<li>
+					<figure itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+					   <img src="" itemprop="contentURL" alt="" />
+					</figure>
+					<strong itemprop="name">Client name</strong>				
+				</li>
+			</ul>
+			
+		</section>
+
+	    <section itemprop="author" itemscope="" itemtype="http://schema.org/Organization">
+		    
+		    <!-- Using meta to describe properties not included in visual markup -->
+		    
+			<meta itemprop="name" content="Name of company providing the service" />
+			<meta itemprop="url" content="http://www.google.com" />   
+			<meta itemprop="address" content="Oxford Street, London, United Kingdom" />   
+			
+			
+			<!-- List of awards. We use Win Action because serves purpose better then Review -->
+			
+			<aside itemprop="event" itemscope="" itemtype="http://schema.org/events">
+				<ul>
+					<li itemprop="event" itemscope="" itemtype="http://schema.org/WinAction">
+						<meta itemprop="startTime endTime" content="2011-04-01" />
+						<strong itemprop="object name">Cannes Lion 2014</strong>
+						<small itemprop="description">The most creative campaing</small>
+						<a href="#" itemprop="url">Price website</a>
+					</li>
+				</ul>
+			</aside>
+		
+			<!-- Team, Employees -->
+			
+			<aside itemprop="employee" itemscope="" itemtype="http://schema.org/employees">
+				<ul>
+					<li itemscope="" itemtype="http://schema.org/employee">
+						<figure itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+						   <img src="" itemprop="contentURL" alt="" />
+						</figure>
+						<strong itemprop="name">
+							<span itemprop="givenName">Paul</span> <span itemprop="familyName">Smith</span>
+						</strong>
+						<small itemprop="jobTitle">Account Manager</small>
+					</li>
+				</ul>
+			</aside>
+			
+			<!-- We understand testimonial as a basic review usually go as a list -->
+
+			<aside itemprop="review" itemscope="" itemtype="http://schema.org/Reviews">
+				<ul>
+					<li>
+					
+						<blockquote itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+							<p itemprop="reviewBody">The new branding simply connects our brand to a range of audiences.</p>
+							<cite itemprop="author">Paul Smith</cite>
+							<meta itemprop="datePublished" content="2011-04-01">
+						</blockquote>	
+						
+					</li>			
+					<li>
+					
+						<blockquote itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+							<p itemprop="reviewBody">The new branding simply connects our brand to a range of audiences.</p>
+							<cite itemprop="author">Paul Smith</cite>
+							<meta itemprop="datePublished" content="2011-04-01">
+						</blockquote>	
+						
+					</li>			
+				</ul>
+			</aside>		 
+		
+    	</section>
+
+	</main>
+
+
+</body>
