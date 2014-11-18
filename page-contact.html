@@ -1,0 +1,92 @@
+<!--
+	
+	HTML5 + Schema mockup for CONTACT US PAGE
+
+	Validated using Google Webmasters Tools
+	http://www.google.com/webmasters/tools/richsnippets
+
+-->
+
+<body itemscope="" itemtype="http://schema.org/ContactPage">
+	
+	<header itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact US</a></li>
+			</ul>
+		</nav> 
+	</header>
+	
+	<main>
+	
+		<h1 itemprop="name">Contact our company</h1>
+		
+		<!-- Main description -->
+		
+		<section itemprop="mainContentOfPage">
+			
+			We are located in the hearth of London. Bla bla..
+			
+		</section>
+		
+		<!-- Overall contact details - map, address, contacs, persons, etc  -->
+		
+		<section itemscope="" itemtype="http://schema.org/LocalBusiness">
+			
+			<!-- Generall contact information - name, phone, eamil -->
+			
+			<strong itemprop="name">Company name</strong>
+			<a href="mailto:email@email.com" itemprop="email">email@email.com</a>
+			<a href="tel:123456789" itemprop="telephone">123456789</a>
+			
+			<!-- Map figure and its Geo Coordinates -->
+			
+			<span itemscope="" itemprop="hasMap" itemtype="http://schema.org/Map">
+				<link itemprop="mapType" href="http://schema.org/VenueMap" />
+				<a itemprop="url" href="www.maps.google.com">
+					<figure itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+					   <img src="" itemprop="contentURL" alt="" />
+					</figure>
+				</a>
+			</span>
+			
+			<span itemprop="geo" itemscope="" itemtype="http://schema.org/GeoCoordinates">
+				<meta itemprop="latitude" content="40.75" />
+				<meta itemprop="longitude" content="73.98" />
+			</span>			
+			
+			<!-- Address of the company -->
+						
+			<address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">Oxford Streat</span> 
+					<span itemprop="streetAddress">Oxford Circus</span>
+					<span itemprop="addressLocality">London</span>
+					<span itemprop="postalCode">W1 111</span>
+					<span itemprop="addressCountry" class="hide">United Kingdom</span>
+			</address>
+
+			<!-- List of particular departments, persons or generic channels to contact -->
+			
+			<ul itemprop="contactPoint" itemscope="" itemtype="http://schema.org/ContactPoints">
+				
+				<li itemprop="contactPoint" itemscope="" itemtype="http://schema.org/ContactPoint">
+					<strong itemprop="name">Business enquiries</strong>
+					<a href="mailto:email@email.com" itemprop="email">email@email.com</a>
+					<a href="tel:123456789" itemprop="telephone">123456789</a>
+				</li>
+				
+				<li itemprop="contactPoint" itemscope="" itemtype="http://schema.org/ContactPoint">
+					<strong itemprop="name">Job enquiries</strong>
+					<a href="mailto:email@email.com" itemprop="email">email@email.com</a>
+					<a href="tel:123456789" itemprop="telephone">123456789</a>
+				</li>
+				
+			</ul>
+			
+		</section>
+
+	</main>
+
+</body>
